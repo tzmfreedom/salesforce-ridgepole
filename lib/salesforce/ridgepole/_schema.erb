@@ -1,0 +1,8 @@
+
+<% tables.each do |table| %>
+create_table <%= table.name %>, <%= table.options %> do |t|
+  <% table.fields.each do |field| %>
+  t.<%= field.type %> '<%= field.name %>', <%= table.options %>
+  <% end %>
+end
+<% end %>

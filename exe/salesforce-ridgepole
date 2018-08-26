@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'salesforce/ridgepole/cli'
+
+require 'pry-byebug'
+require 'dotenv'
+Dotenv.load
+
+SalesforceRidgepole::Cli.start(ARGV)
